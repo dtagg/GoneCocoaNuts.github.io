@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      Final
+
+      Resume
+      Author: Dustin Tagg
+      Date:   12/16/2014
+
+      Filename:         home.htm
+      Supporting files: modernizr-1.5.js, layout.css, styles.css, banner.jpg, MeAndGF2.jpg
+	   
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Home</title>
+      <script src="modernizr-1.5.js"></script>
+	  <style type="text/css"> </style>
+	  
+	  <link href="generalStyles.css" rel="stylesheet" media="screen" />  
+	  <link href="layout.css" rel="stylesheet" media="screen and (min-width: 501px)" />
+	  <link href="mobile.css" rel="stylesheet" media="only screen and (max-width: 501px)" />
+	  
+	  <script type="text/javascript">
+		 var image = new Image()
+		 image[0] = new Image()
+		 image[0].src = "images/luxury.jpg"
+		 image[1] = new Image()
+		 image[1].src = "images/dolphins.jpg"
+		 image[2] = new Image()
+		 image[2].src = "images/overview.jpg"
+	 </script>
+	  
+   </head>
+   
+   <body>
+   <header>
+	   <a href="http://www.gifmix.net/gifs/" target="_blank" title="Gifs" style="position: absolute;float:left;">
+			<img src="http://www.gifmix.net/gifs/monkey-gifs/34.GIF" border="0" alt="Gifs">
+	   </a>
+   </header>
+   
+		<div id="strip">
+  		   <nav id="main">
+				<ul>
+				   <li><a href="GoneCocoaNutsHome.html">Home</a></li>
+					<li><a href="About.html">About CocoNut's</a></li>
+				   <li><a href="RoomsRates.html">Rooms & Rates</a></li>
+				   <li><a href="BocasDelToro.html">Bocas Del Toro</a></li>
+				   <li><a href="Map.html">Map</a></li>
+				   <li><a href="Gallery.html">Gallery</a></li>
+				   <li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		<div/>
+		
+		<div id="frame" class="narrow">
+		
+			<p><img src="images/overview.jpg" id="slides" alt="image"/></p>		
+			<script type="text/javascript">
+				var step=0;
+					function slideit()
+					{
+						if (!document.images)
+							return
+						document.getElementById('slides').src= image[step].src
+						if (step<2)
+							step++
+						else
+							step=0
+						setTimeout("slideit()",2500)
+					}
+				slideit()
+			</script>		
+
+			<section id="container">   
+				<h1>Gone Cocoa Nuts</h1>
+								
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Come and relax at Gone CocoNuts. We offer tranquil, peaceful, and a spiritual uplifting atmosphere at this lodge.
+					We offer a different experience at Gone CocoNuts than other lodge's, away from the hustle and bustle of your everyday lives. If your looking for a quite place to get away this is it.
+					It's a beautiful Caribbean setting with a beach and swaying coconut tree's. There abundance of fruit tree's and tropical vegetation.
+					You are likely to see monkey's, sloth's, and a variety of bird's. It's a one of a kind experience and lodge. We look forward to meeting you where you would truly enjoy the Caribbean lifestyle.
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So come along and we promise you will go CocoNuts!
+				</p>
+				<audio controls>
+					<source src="audio/TheGoldenPen.mp3">
+					<source src="audio/TheGoldenPen.ogg">
+					<p>Your browser does not support audio playback, download the file:
+					<a href="/audio/TheGoldenPen.mp3">MP3</a>,
+					<a href="/audio/TheGoldenPen.ogg">Vorbis</a>,
+				</audio> 	
+								
+			</section>
+		<div/>
+	</body>
+</html>

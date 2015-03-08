@@ -1,0 +1,143 @@
+﻿/*
+   Gone Coconuts
+
+   Gone Coconuts General Layout Styles
+   Author: Dustin Tagg
+   Date:   2/20/2015
+
+   Filename:         layout.css
+   Supporting Files: none
+*/
+/* Section & Body layout */
+#container{
+	background-color: rgb(248,248,240);
+	-moz-box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+	webkit-box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+	box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+}
+#wowslider-container0{
+	//display: none;
+}
+@media screen and (min-width: 801px){
+	#slides{
+		height: 400px;
+		margin: auto auto auto auto;
+		position: relative;
+		display: block;
+	}
+	.narrow {
+		padding-top: 8px;
+		margin: auto auto auto auto; 
+		width: 600px;
+	}
+	.wide {
+		padding-top: 8px;
+		margin: auto auto auto auto; 
+		width: 750px;
+	}
+	#gallery {
+		background-color: rgb(248,248,240);
+		-moz-box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+		webkit-box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+		box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+	}
+	#gallery p img {
+		padding: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	#gallery p {
+		text-align: center;
+		margin: auto auto auto auto;
+		position: relative;
+		padding-bottom: 10px;
+		display: inline-block;
+		float: both;
+		width: 100%;
+	}
+	.enlarge:hover {
+		transform:scale(1.25,1.25);
+		transform-origin:20 0;
+	}
+	body div section p{
+		padding: 7px 7px;
+	}
+	/* Nav modifications */
+	#strip{
+		height: 35px;
+		width: 100%;
+		background-color: rgb(170,0,0);
+	}
+	nav {
+		text-align: center;
+	}
+	nav ul li {
+		display: block;
+		float: left;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	nav {
+		position: relative;
+	}
+	nav ul li:first-of-type{
+		border-left: 2px solid black;
+	}
+	nav ul li:last-of-type{
+		border-right: 2px solid black;
+	}
+}
+@media screen and (max-width: 801px){
+	#slides{
+		height: 220px;
+		margin: auto auto auto auto;
+		position: relative;
+		display: block;
+	}
+	#frame {
+		padding-top: 8px;
+		padding-left: 160px;
+		padding-right: 10px;
+	}
+	#gallery {
+		height: 100%;
+		background-color: rgb(248,248,240);
+		-moz-box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+		webkit-box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+		box-shadow: rgb(160,82,45) 5px 5px 10px 2px;
+	}
+	#gallery p img {
+		padding: 10px;
+	}
+	#gallery p {
+		text-align: center;
+		margin: auto auto auto auto;
+		position: relative;
+		padding-bottom: 10px;
+		display: inline-block;
+		float: both;
+		width: 100%;
+	}
+	.enlarge:hover {
+		transform:scale(1.25,1.25);
+		transform-origin:250 0;
+	}
+	#container p{
+		padding: 7px 7px;
+	}
+	/* Nav modifications */
+	#strip{
+		height: 35px;
+		background-color: rgb(170,0,0);
+	}
+	nav ul li {
+		border: 1px solid black;
+		padding-left: 4px;
+		width: 150px;
+	}
+	nav ul li:first-of-type{
+		border-top: none;
+	}
+}

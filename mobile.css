@@ -1,0 +1,70 @@
+/*
+   Gone CocoNuts
+
+   Gone Coconuts Mobile Layout Styles
+   Author: Dustin Tagg
+   Date:   2/19/2015
+
+   Filename:         mobile.css
+   Supporting Files: none
+
+*/
+body {
+	background-color: rgb(248,248,240);
+}
+#frame{
+	padding: 15px;
+	position: absolute;
+} 
+nav {
+	text-align: center;
+	margin: auto auto auto auto;
+	position: relative;
+	padding-bottom: 10px;
+	display: inline-block;
+	float: both;
+	width: 100%;
+}
+nav ul {
+	width: 100%;
+}
+nav li {
+    background-color: rgb(90, 127, 0);
+    border: 1px solid rgb(18, 15, 12);
+	background-color: rgb(170,0,0);
+}
+nav ul li:first-of-type{
+	border-top: none;
+}
+h1{
+	text-align: center;
+}
+#slides{
+	height: 150px;
+	margin: auto auto auto auto;
+	position: relative;
+	display: block;
+}
+#gallery p {
+	text-align: center;
+	margin: auto auto auto auto;
+	position: relative;
+	padding-bottom: 10px;
+	display: inline-block;
+	float: both;
+	width: 100%;
+}
+#gallery img{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Mobile styles under portrait orientation */ 
+@media screen and (orientation: portrait) {   
+
+}
+/* Mobile styles under landscape orientation */  
+@media screen and (orientation: landscape) {  
+	
+}
